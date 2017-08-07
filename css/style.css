@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:300,400&subset=cyrillic');
+* {
+    margin: 0;
+}
+/* Sticky footer */
+html,
+.page {
+    height: 100%;
+}
+.page__wrapper {
+    min-height: 100%;
+    margin-bottom: -60px; /* equal to .page__footer height */
+}
+.page__wrapper:after {
+    content: "";
+    display: block;
+}
+.page__wrapper:after,
+.page__footer {
+    height: 60px; /* equal to .page__wrapper margin-bottom */
+}
+/* end Sticky footer */
+.page {
+    background-color: #4d4d4d;
+    user-select: none;
+    position: relative;
+}
+.message-404 {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    margin: -200px auto 0;
+}
+.message-404__logo {
+    width: 63px;
+    height: 122px;
+    background: url(../img/message__logo.png) center center no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+}
+.message-404__title {
+    font: 400 43px/1 Ubuntu, sans-serif;
+    color: #cacaca;
+    text-align: center;
+    position: relative;
+    top: 5px;
+    left: -5px;
+}
+.message-404__title_big {
+    font-size: 103px;
+}
+.message-404__text {
+    font: 300 20px/1 Ubuntu, sans-serif;
+    color: #a29898;
+    text-align: center;
+    text-transform: lowercase;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.message-404__button {
+    display: block;
+    width: 245px;
+    height: 47px;
+    background-color: #e97b24;
+    font: 400 14px/47px Ubuntu, sans-serif;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0 auto;
+    transition: all .4s;
+}
+.message-404__button:hover {
+    background-color: #ce6c08;
+}
+.footer {
+    font: 300 13px/60px Ubuntu, sans-serif;
+    color: #a29898;
+    text-align: center;
+}
+@media all and (max-height: 460px) {
+    .message-404 {
+        position: static;
+        padding-top: 30px;
+        margin-top: 0;
+    }
+}
